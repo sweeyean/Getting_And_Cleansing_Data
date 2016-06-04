@@ -13,7 +13,7 @@ filename <- "getdata_dataset.zip"
 
 ## Download the dataset:
 if (!file.exists(filename)){
-  fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "
+  fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   download.file(fileURL, filename, mode="wb")
 }  
 ## unzip the dataset "getdata_dataset.zip and placed them at folder "UCI HAR Dataset"
@@ -104,6 +104,3 @@ library(reshape2)
        
 ## Lastly, create a file with the new tidy dataset
         write.table(mean_data,"tidy_dataset.txt", row.name=FALSE)
-
-		
-		
